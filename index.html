@@ -10,21 +10,22 @@
   </head>
 
   <body>
-
+		<div class="icon" id="linkedin"><a href="https://www.linkedin.com/in/nicasnes/"><img src="images/linkedin.png" alt="LinkedIn" height="45" width="55"></a></div>
+		<div class="icon" id="git"><a href="https://www.github.com/nicasnes"><img src="images/github.png" alt="GitHub" height="45" width="45"></a></div>
     <p class="greeting">Generate a list of all the citations in a document!</p>
 
 	
 	<form id="paperinfo">
-	<label for="paper">URL of paper (pdf):</label>
+	<label for="paper">URL of paper (pdf):</label><br>
 	<input type="url" id="paper" name="paper"><br><br>
 	
-	<label for="paporbib">Full paper or bibliography?</label>
+	<label for="paporbib">Full paper or bibliography?</label><br>
 	<select name="paporbib" id="paporbib">
     <option value="full_paper">Full paper</option>
     <option value="bibliography">Biblography</option> 
 	</select><br><br>
 	
-	<label for="refstyle">Reference style?</label>
+	<label for="refstyle">Reference style?</label><br>
 	<select name="refstyle" id="refstyle">
     <option value="acs">ACS</option>
     <option value="ama">AMA</option>
@@ -39,13 +40,13 @@
 	<option value="vancouver">Vancouver</option>
 	</select><br><br>
 
-	<label for="scholar">Enable Google Scholar links?</label>
+	<label for="scholar">Enable Google Scholar links?</label><br>
 	<select name="scholar" id="scholar">
     <option value="yes">Yes</option>
     <option value="no">No</option>
 	</select><br><br>
 	
-	<button id="display">Display results</button><button id="download">Download results (.RIS)</button>
+	<button id="display">Display results</button><button id="download">Download .RIS</button>
 	</form>
 
 	<div class="resultbox">

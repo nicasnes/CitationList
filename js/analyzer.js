@@ -49,7 +49,6 @@ function downloadResults() {
   var url = form.elements[0].value;
   var document_type = form.elements[1].value;
   var reference_style = form.elements[2].value; 
-  var scholarLinksEnabled = form.elements[3].value === "yes" ? true : false; 
   (async () => {
   try {
     var response = await fetch("https://ref.scholarcy.com/api/references/download?url=" + url + "&document_type=" + document_type + "&reference_style=" + reference_style + "&reference_format=ris&engine=v1");
