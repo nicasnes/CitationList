@@ -13,6 +13,7 @@
 
     <p class="greeting">Generate a list of all the citations in a document!</p>
 
+	
 	<form id="paperinfo">
 	<label for="paper">URL of paper (pdf):</label>
 	<input type="url" id="paper" name="paper"><br><br>
@@ -37,8 +38,14 @@
     <option value="nature">Nature</option>
 	<option value="vancouver">Vancouver</option>
 	</select><br><br>
+
+	<label for="scholar">Enable Google Scholar links?</label>
+	<select name="scholar" id="scholar">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+	</select><br><br>
 	
-	<button id="display">Display results</button>
+	<button id="display">Display results</button><button id="download">Download results (.RIS)</button>
 	</form>
 
 	<div class="resultbox">
