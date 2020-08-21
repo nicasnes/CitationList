@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>		
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"/>
+    <title>Citation List</title>
+
+  </head>
+
+  <body>
+
+    <p class="greeting">Generate a list of all the citations in a document!</p>
+
+	<form id="paperinfo">
+	<label for="paper">URL of paper:</label>
+	<input type="url" id="paper" name="paper"><br><br>
+	
+	<label for="paporbib">Full paper or bibliography?</label>
+	<select name="paporbib" id="paporbib">
+    <option value="full_paper">Full paper</option>
+    <option value="bibliography">Biblography</option> 
+	</select><br><br>
+	
+	<label for="refstyle">Reference style?</label>
+	<select name="refstyle" id="refstyle">
+    <option value="acs">ACS</option>
+    <option value="ama">AMA</option>
+	<option value="apa">APA</option>
+    <option value="chicago">Chicago</option>
+	<option value="ensemble">Ensemble</option>
+    <option value="harvard">Harvard</option>
+	<option value="ieee">IEEE</option>
+    <option value="mhra">MHRA</option>
+	<option value="mla">MLA</option>
+    <option value="nature">Nature</option>
+	<option value="vancouver">Vancouver</option>
+	</select><br><br>
+	
+	<button id="display">Display results</button>
+	</form>
+
+	<p id="results"></p>
+  </body>
+	<script type="text/javascript" src="js/analyzer.js"></script>
+</html>

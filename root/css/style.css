@@ -1,0 +1,46 @@
+body {
+	background: url(../images/background-radial.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #f8f9fa;
+	font-family: 'Source Sans Pro', serif;
+}
+.greeting {
+	font-size: 30px;
+	padding: 10px;
+}
+
+form {
+    display: inline-block;
+}
+
+label { 
+	font-size: 18px;
+}
+
+input {
+	width: 100%;
+	padding: 12px 24px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+select {
+	width: 100%;
+	padding: 12px 24px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+button {
+	width: 50%;
+	padding: 12px 24px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 15px;
+	font-family: 'Source Sans Pro', serif;
+	font-size: 15px;
+}
+
