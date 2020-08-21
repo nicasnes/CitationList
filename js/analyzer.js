@@ -19,7 +19,12 @@ function displayResults() {
       }
     } catch (e) {
       console.log('Error', e);
-      document.getElementById("results").innerHTML = "An error was encountered with the file you submitted. Please try another file or email me at nicasnes@gmail.com."
+      console.log(url);
+      if (url == "") {
+        document.getElementById("results").innerHTML = "Enter a URL for me to analyze!";
+      } else {
+        document.getElementById("results").innerHTML = "An error was encountered with the file you submitted. Please try another file or email me at nicasnes@gmail.com."
+      }
     }
   })();
 }

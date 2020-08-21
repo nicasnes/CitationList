@@ -14,7 +14,7 @@
     <p class="greeting">Generate a list of all the citations in a document!</p>
 
 	<form id="paperinfo">
-	<label for="paper">URL of paper:</label>
+	<label for="paper">URL of paper (pdf):</label>
 	<input type="url" id="paper" name="paper"><br><br>
 	
 	<label for="paporbib">Full paper or bibliography?</label>
@@ -41,7 +41,9 @@
 	<button id="display">Display results</button>
 	</form>
 
+	<div class="resultbox">
 	<p id="results"></p>
+	</div>
   </body>
 	<script type="text/javascript" src="js/analyzer.js"></script>
 </html>
