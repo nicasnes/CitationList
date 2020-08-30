@@ -3,3 +3,7 @@ A website for generating a list of citations from a PDF using the Scholarcy API.
 
 The website can be accessed here:
 https://nicasnes.github.io/CitationList/
+
+In its current state, the website appears as follows:
+
+![Preview of the CitationList website.](https://i.imgur.com/QigvV7a.png)
