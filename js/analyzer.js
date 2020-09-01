@@ -49,7 +49,7 @@ function produceResults(isDownload) {
         for (reference of data.reference_links) {
           results.innerHTML += reference.entry
           if (scholarLinksEnabled && reference.scholar_url) { 
-            results.innerHTML += "<a href=" + reference.scholar_url + " target= _blank> <img border='0' alt='Google Scholar' src='images/scholar.png' width='20' height='20'></a>";
+            results.innerHTML += "<a href=" + reference.scholar_url + " target= _blank><img border='0' alt='Google Scholar' src='images/scholar.png' width='20' height='20'></a>";
           }
           results.innerHTML += "<br><br>";
         }
