@@ -30,6 +30,10 @@ function produceResults(isDownload) {
   results.innerHTML = "Loading! Please wait...";
   let scholarLinksEnabled = form.elements[3].value === "yes" ? true : false; 
 
+  if (url == "") {
+    results.innerHTML = "Enter a URL for me to analyze!";
+    return;
+  }
   (async () => {
     try {
       if (isDownload) { 
@@ -37,7 +41,6 @@ function produceResults(isDownload) {
         let response = await fetch("https://ref.scholarcy.com/api/references/download?url=" + url + "&document_type=" + document_type + "&reference_style=" + reference_style + "&reference_format=ris&engine=v1");
         window.open(response.url);
         clearOutput();
-    
       } else { 
         // Make a GET request to the Scholarcy API using the provided URL to extract the results
         let response = await fetch("https://ref.scholarcy.com/api/references/extract?url=" + url + "&document_type=" + document_type + "&resolve_references=true&reference_style=" + reference_style + "&engine=v1");
