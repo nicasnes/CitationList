@@ -49,6 +49,8 @@ function produceResults(isDownload) {
 
         // Loop through the references in the JSON produced by the Fetch API
         // and modify the inner HTML of results to list the references with scholar links
+        let refCount = 0;
+        results.innerHTML += data.reference_links.length + " total references found.<br><br>";
         for (reference of data.reference_links) {
           results.innerHTML += reference.entry
           if (scholarLinksEnabled && reference.scholar_url) { 
