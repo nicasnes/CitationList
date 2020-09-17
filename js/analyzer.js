@@ -59,11 +59,7 @@ function produceResults(isDownload) {
       }
     } catch (e) {
       console.log('Error', e);
-      if (url == "") {
-        results.innerHTML = "Enter a URL for me to analyze!";
-      } else {
-        results.innerHTML = "An error was encountered with the file you submitted. Please try another file or email me at nicasnes@gmail.com."
-      }
+      results.innerHTML = "An error was encountered with the file you submitted. Please try another file or email me at nicasnes@gmail.com."
     }
 })();
 }
